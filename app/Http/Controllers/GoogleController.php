@@ -52,8 +52,10 @@ class GoogleController extends Controller
                     'password' => encrypt('User@123$')
                 ]);
 
+                $finduser = User::where('google_id', $user->id)->first();
+
                 Team::forceCreate([
-                    'user_id' => $user->id,
+                    'user_id' => $finduser->id,
                     'name' => explode(' ', $user->name, 2)[0]."'s Team",
                     'personal_team' => true,
                 ]);
