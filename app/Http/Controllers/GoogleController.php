@@ -8,8 +8,8 @@ use Exception;
 use App\Models\User;
 use App\Models\Team;
 use Illuminate\Support\Facades\Auth;
-use Laravel\Jetstream\Jetstream;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
+use Laravel\Jetstream\Jetstream;
 use DB;
 
 class GoogleController extends Controller
@@ -52,11 +52,11 @@ class GoogleController extends Controller
                     'password' => encrypt('User@123$')
                 ]);
 
-                $user->ownedTeams()->save(Team::forceCreate([
+                Team::forceCreate([
                     'user_id' => $user->id,
                     'name' => explode(' ', $user->name, 2)[0]."'s Team",
                     'personal_team' => true,
-                ]));
+                ]);
 
                 Auth::login($newUser);
 
