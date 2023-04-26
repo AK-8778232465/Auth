@@ -203,3 +203,11 @@
 #50 D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\Auth\\\\public\\\\...')
 #51 {main}
 "} 
+[2023-04-26 10:11:02] local.ERROR: syntax error, unexpected single-quoted string ",", expecting "]" {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected single-quoted string \",\", expecting \"]\" at D:\\Auth\\app\\Models\\Team.php:31)
+[stacktrace]
+#0 D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(243): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(message: ''syntax error, ...', code: '0', error: '['type' => 4, '...', traceOffset: '0', traceArgs: '???', trace: '???')
+#1 D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(230): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError(error: '['type' => 4, '...', traceOffset: '0')
+#2 D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(254): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure:D:\\Auth\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php:253-255}()
+#4 {main}
+"} 
