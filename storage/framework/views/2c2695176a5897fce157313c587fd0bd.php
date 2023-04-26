@@ -173,6 +173,11 @@
 <?php unset($__componentOriginal71c6471fa76ce19017edc287b6f4508c); ?>
 <?php endif; ?>
             </div>
+            <div class="flex items-center justify-end mt-4">
+                <a href="<?php echo e(url('auth/google')); ?>">
+                    <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" style="margin-left: 3em;">
+                </a>
+            </div>
         </form>
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>

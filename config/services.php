@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '261675769912-79li452kpr3dis3gvm7a0ecqai5mao2n.apps.googleusercontent.com',
+        'client_secret' => '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',
+        'redirect' => 'https://dream-dev.in/auth/google/callback',
+    ],
+
 ];
