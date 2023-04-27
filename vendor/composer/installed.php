@@ -94,6 +94,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'emtiazzahid/tidio-laravel' => array(
+            'pretty_version' => 'v0.0.1',
+            'version' => '0.0.1.0',
+            'reference' => '5ef1e0698ab38ddc6791b094205c20f7b36d0edd',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../emtiazzahid/tidio-laravel',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'fakerphp/faker' => array(
             'pretty_version' => 'v1.21.0',
             'version' => '1.21.0.0',

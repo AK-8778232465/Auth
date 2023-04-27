@@ -555,6 +555,70 @@
             "install-path": "../egulias/email-validator"
         },
         {
+            "name": "emtiazzahid/tidio-laravel",
+            "version": "v0.0.1",
+            "version_normalized": "0.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/emtiazzahid/tidio-laravel.git",
+                "reference": "5ef1e0698ab38ddc6791b094205c20f7b36d0edd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/emtiazzahid/tidio-laravel/zipball/5ef1e0698ab38ddc6791b094205c20f7b36d0edd",
+                "reference": "5ef1e0698ab38ddc6791b094205c20f7b36d0edd",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.5.0",
+                "php": ">=7.0.0"
+            },
+            "time": "2021-10-02T07:46:17+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "EmtiazZahid\\Tidio\\TidioServiceProvider"
+                    ],
+                    "aliases": {
+                        "Tidio": "EmtiazZahid\\Tidio\\Tidio"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "EmtiazZahid\\Tidio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emtiaz Zahid",
+                    "email": "emtiazzahid@gmail.com",
+                    "homepage": "https://github.com/emtiazzahid"
+                }
+            ],
+            "description": "A tidio chat widget for Laravel.",
+            "homepage": "https://github.com/emtiazzahid/tidio-laravel",
+            "keywords": [
+                "chat",
+                "laravel",
+                "tawk",
+                "tidio",
+                "tidio.com",
+                "widget"
+            ],
+            "support": {
+                "issues": "https://github.com/emtiazzahid/tidio-laravel/issues",
+                "source": "https://github.com/emtiazzahid/tidio-laravel/tree/v0.0.1"
+            },
+            "install-path": "../emtiazzahid/tidio-laravel"
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.21.0",
             "version_normalized": "1.21.0.0",

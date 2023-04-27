@@ -1,4 +1,15 @@
 <?php return array (
+  'emtiazzahid/tidio-laravel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'EmtiazZahid\\Tidio\\TidioServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Tidio' => 'EmtiazZahid\\Tidio\\Tidio',
+    ),
+  ),
   'jenssegers/agent' => 
   array (
     'providers' => 

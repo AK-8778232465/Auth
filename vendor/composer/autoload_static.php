@@ -155,6 +155,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         ),
         'E' => 
         array (
+            'EmtiazZahid\\Tidio\\' => 18,
             'Egulias\\EmailValidator\\' => 23,
         ),
         'D' => 
@@ -492,6 +493,10 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         array (
             0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
         ),
+        'EmtiazZahid\\Tidio\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/emtiazzahid/tidio-laravel/src',
+        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
@@ -586,6 +591,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\GoogleController' => __DIR__ . '/../..' . '/app/Http/Controllers/GoogleController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -996,6 +1002,9 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Egulias\\EmailValidator\\Warning\\QuotedString' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/QuotedString.php',
         'Egulias\\EmailValidator\\Warning\\TLD' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/TLD.php',
         'Egulias\\EmailValidator\\Warning\\Warning' => __DIR__ . '/..' . '/egulias/email-validator/src/Warning/Warning.php',
+        'EmtiazZahid\\Tidio\\Tidio' => __DIR__ . '/..' . '/emtiazzahid/tidio-laravel/src/Tidio.php',
+        'EmtiazZahid\\Tidio\\TidioAPI' => __DIR__ . '/..' . '/emtiazzahid/tidio-laravel/src/TidioAPI.php',
+        'EmtiazZahid\\Tidio\\TidioServiceProvider' => __DIR__ . '/..' . '/emtiazzahid/tidio-laravel/src/TidioServiceProvider.php',
         'Faker\\Calculator\\Ean' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Ean.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Calculator/Inn.php',
