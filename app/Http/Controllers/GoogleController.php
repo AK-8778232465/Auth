@@ -48,7 +48,7 @@ class GoogleController extends Controller
 
             }else{
                 if($duplicateuser) {
-                    return redirect()->intended('login')->with('duplicate', "Email registered already without SSO");
+                    return redirect()->intended('login')->with('duplicate', "Email already registered without SSO");
                 } else {
                     $newUser = User::create([
                         'name' => $user->name,
