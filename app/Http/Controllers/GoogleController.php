@@ -48,7 +48,7 @@ class GoogleController extends Controller
 
             }else{
                 if($duplicateuser) {
-                    //
+                    return redirect()->back();
                 } else {
                     $newUser = User::create([
                         'name' => $user->name,
