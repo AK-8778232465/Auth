@@ -35,19 +35,6 @@
             </div>
         </div>
     </div>
-
-    
-
-    <script>
-        $( document ).ready(function() {
-            document.tidioIdentify = {
-            distinct_id: <?php echo e(Auth::user()->id); ?>, // Unique visitor ID in your system
-            email: <?php echo e(Auth::user()->email); ?>, // visitor email
-            name: <?php echo e(Auth::user()->name); ?>, // Visitor name
-        };
-        });
-
-    </script>
     <script src="//code.tidio.co/3etfupnebul8sxxvlcozruyreo16w8ep.js" async></script>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>

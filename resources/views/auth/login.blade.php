@@ -10,6 +10,11 @@
             <div class="mb-4 font-medium text-sm text-green-600">
                 {{ session('status') }}
             </div>
+        @elseif (session('duplicate'))
+        <div class="font-medium text-red-600">{{ __('Whoops! Something went wrong.') }}</div>
+            <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+                    <li>{{ $duplicate }}</li>
+            </ul>
         @endif
 
         <form method="POST" action="{{ route('login') }}">
