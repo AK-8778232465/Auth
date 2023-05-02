@@ -37,6 +37,9 @@ class GoogleController extends Controller
 
             $finduser = User::where('google_id', $user->id)->first();
 
+            $duplicateuser = User::where('email', $user->email)->first();
+
+
             if($finduser){
 
                 Auth::login($finduser);
@@ -44,25 +47,28 @@ class GoogleController extends Controller
                 return redirect()->intended('dashboard');
 
             }else{
+                if($duplicateuser) {
+                    //
+                } else {
+                    $newUser = User::create([
+                        'name' => $user->name,
+                        'email' => $user->email,
+                        'google_id'=> $user->id,
+                        'password' => encrypt('User@123$')
+                    ]);
 
-                $newUser = User::create([
-                    'name' => $user->name,
-                    'email' => $user->email,
-                    'google_id'=> $user->id,
-                    'password' => encrypt('User@123$')
-                ]);
+                    $finduser = User::where('google_id', $user->id)->first();
 
-                $finduser = User::where('google_id', $user->id)->first();
+                    Team::forceCreate([
+                        'user_id' => $finduser->id,
+                        'name' => explode(' ', $user->name, 2)[0]."'s Team",
+                        'personal_team' => true,
+                    ]);
 
-                Team::forceCreate([
-                    'user_id' => $finduser->id,
-                    'name' => explode(' ', $user->name, 2)[0]."'s Team",
-                    'personal_team' => true,
-                ]);
+                    Auth::login($newUser);
 
-                Auth::login($newUser);
-
-                return redirect()->intended('dashboard');
+                    return redirect()->intended('dashboard');
+                }
             }
 
         } catch (Exception $e) {
