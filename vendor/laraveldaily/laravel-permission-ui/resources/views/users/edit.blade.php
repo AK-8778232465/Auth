@@ -13,7 +13,7 @@
                 <div class="space-x-2">
                     @foreach($roles as $id => $name)
                         <div class="inline-flex space-x-1">
-                            <input class="rounded-md border-gray-300 shadow-sm" type="checkbox" name="roles[]" id="role-{{ $id }}" value="{{ $id }}" @checked(in_array($id, old('roles', [])) || $user->roles->contains($id))>
+                            <input class="rounded-md border-gray-300 shadow-sm" type="radio" name="roles[]" id="role-{{ $id }}" value="{{ $id }}" @checked(in_array($id, old('roles', [])) || $user->roles->contains($id))>
                             <label class="text-sm font-medium text-gray-700" for="role-{{ $id }}">{{ $name }}</label>
                         </div>
                     @endforeach
