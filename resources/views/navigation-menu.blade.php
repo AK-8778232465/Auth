@@ -107,7 +107,16 @@
                                     {{ __('API Tokens') }}
                                 </x-dropdown-link>
                             @endif
-
+                            @role('Admin')
+                            <div class="border-t border-gray-200"></div>
+                            <x-dropdown-link href="{{ url('admin') }}">
+                                {{ __('Admin Panel') }}
+                            </x-dropdown-link>
+                            <input type="hidden" {!! Cache::put('uid', Guid::create()) !!}>
+                            <x-dropdown-link href="{{ url(Cache::get('uid')) }}">
+                                {{ __('Permissions') }}
+                            </x-dropdown-link>
+                            @endrole
                             <div class="border-t border-gray-200"></div>
 
                             <!-- Authentication -->

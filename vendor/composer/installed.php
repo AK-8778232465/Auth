@@ -1262,6 +1262,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'sudiptpa/guid' => array(
+            'pretty_version' => 'v1.0.5',
+            'version' => '1.0.5.0',
+            'reference' => '270fb4d270bedbfffe2270c43320cad8cbaf510f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sudiptpa/guid',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/console' => array(
             'pretty_version' => 'v6.2.8',
             'version' => '6.2.8.0',

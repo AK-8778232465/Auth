@@ -7842,6 +7842,75 @@
             "install-path": "../spatie/laravel-permission"
         },
         {
+            "name": "sudiptpa/guid",
+            "version": "v1.0.5",
+            "version_normalized": "1.0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sudiptpa/guid.git",
+                "reference": "270fb4d270bedbfffe2270c43320cad8cbaf510f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sudiptpa/guid/zipball/270fb4d270bedbfffe2270c43320cad8cbaf510f",
+                "reference": "270fb4d270bedbfffe2270c43320cad8cbaf510f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.0"
+            },
+            "time": "2020-08-08T10:41:26+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "laravel": {
+                    "aliases": {
+                        "Guid": "Sujip\\Guid\\Facades\\Guid"
+                    },
+                    "providers": [
+                        "Sujip\\Guid\\GuidServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Sujip\\Guid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sujip Thapa",
+                    "email": "sudiptpa@gmail.com",
+                    "homepage": "https://sujipthapa.co",
+                    "role": "Web Developer"
+                }
+            ],
+            "description": "A Simple GUID generator Package for PHP.",
+            "homepage": "https://github.com/sudiptpa/guid",
+            "keywords": [
+                "guid"
+            ],
+            "support": {
+                "issues": "https://github.com/sudiptpa/guid/issues",
+                "rss": "https://github.com/sudiptpa/guid/releases.atom",
+                "source": "https://github.com/sudiptpa/guid"
+            },
+            "install-path": "../sudiptpa/guid"
+        },
+        {
             "name": "symfony/console",
             "version": "v6.2.8",
             "version_normalized": "6.2.8.0",

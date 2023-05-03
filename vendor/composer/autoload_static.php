@@ -46,6 +46,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
+        '879c0dabdcce2778aae6b06f7e5cc1c2' => __DIR__ . '/..' . '/sudiptpa/guid/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -93,6 +94,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Sujip\\Guid\\' => 11,
             'Spatie\\Permission\\' => 18,
             'Spatie\\LaravelPackageTools\\' => 27,
             'Spatie\\LaravelIgnition\\' => 23,
@@ -355,6 +357,10 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Sujip\\Guid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sudiptpa/guid/src',
         ),
         'Spatie\\Permission\\' => 
         array (
@@ -7028,6 +7034,9 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Spatie\\Permission\\Traits\\RefreshesPermissionCache' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/RefreshesPermissionCache.php',
         'Spatie\\Permission\\WildcardPermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/WildcardPermission.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'Sujip\\Guid\\Facades\\Guid' => __DIR__ . '/..' . '/sudiptpa/guid/src/Facades/Guid.php',
+        'Sujip\\Guid\\Guid' => __DIR__ . '/..' . '/sudiptpa/guid/src/Guid.php',
+        'Sujip\\Guid\\GuidServiceProvider' => __DIR__ . '/..' . '/sudiptpa/guid/src/GuidServiceProvider.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',
         'Symfony\\Component\\Console\\CI\\GithubActionReporter' => __DIR__ . '/..' . '/symfony/console/CI/GithubActionReporter.php',

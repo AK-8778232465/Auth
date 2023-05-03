@@ -191,4 +191,15 @@
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
     ),
   ),
+  'sudiptpa/guid' => 
+  array (
+    'aliases' => 
+    array (
+      'Guid' => 'Sujip\\Guid\\Facades\\Guid',
+    ),
+    'providers' => 
+    array (
+      0 => 'Sujip\\Guid\\GuidServiceProvider',
+    ),
+  ),
 );

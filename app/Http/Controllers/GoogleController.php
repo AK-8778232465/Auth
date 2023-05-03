@@ -59,11 +59,11 @@ class GoogleController extends Controller
 
                     $finduser = User::where('google_id', $user->id)->first();
 
-                    Team::forceCreate([
-                        'user_id' => $finduser->id,
-                        'name' => explode(' ', $user->name, 2)[0]."'s Team",
-                        'personal_team' => true,
-                    ]);
+                    // Team::forceCreate([
+                    //     'user_id' => $finduser->id,
+                    //     'name' => explode(' ', $user->name, 2)[0]."'s Team",
+                    //     'personal_team' => true,
+                    // ]);
 
                     Auth::login($newUser);
 

@@ -171,6 +171,7 @@ return [
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Sujip\Guid\GuidServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -185,6 +186,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Guid' => Sujip\Guid\Guid::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
