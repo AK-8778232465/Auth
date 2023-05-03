@@ -10,10 +10,11 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Jetstream\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
+use Filament\Models\Contracts\FilamentUser;
 use Spatie\Permission\Traits\HasRoles;
 use DB;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens;
     use HasFactory;
@@ -64,14 +65,6 @@ class User extends Authenticatable
 
     public function canAccessFilament(): bool
     {
-        $level = DB::table('model_has_roles')
-                ->where('model_id', $this->id)
-                ->get()->first();
-
-        if ($user->hasRole('Super-Admin')) {
-            return true;
-        } else {
-            return false;
-        }
+        return $this->hasRole('Admin');
     }
 }
