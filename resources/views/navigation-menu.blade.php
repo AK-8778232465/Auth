@@ -44,12 +44,13 @@
                                     </div>
 
                                     <!-- Team Settings -->
+
+                                    @isset(Auth::user()->currentTeam->id)
+                                        <x-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
+                                            {{ __('Team Settings') }}
+                                        </x-dropdown-link>
+                                    @endisset
                                     @role('Admin')
-                                        @isset(Auth::user()->currentTeam->id)
-                                            <x-dropdown-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}">
-                                                {{ __('Team Settings') }}
-                                            </x-dropdown-link>
-                                        @endisset
                                         @can('create', Laravel\Jetstream\Jetstream::newTeamModel())
                                             <x-dropdown-link href="{{ route('teams.create') }}">
                                                 {{ __('Create New Team') }}
@@ -59,11 +60,11 @@
                                     <!-- Team Switcher -->
                                     @if (Auth::user()->allTeams()->count() >= 1)
                                         <div class="border-t border-gray-200"></div>
-
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
-                                            {{ __('Switch Teams') }}
-                                        </div>
-
+                                        @if (Auth::user()->allTeams()->count() > 1)
+                                            <div class="block px-4 py-2 text-xs text-gray-400">
+                                                {{ __('Switch Teams') }}
+                                            </div>
+                                        @endif
                                         @foreach (Auth::user()->allTeams() as $team)
                                             <x-switchable-team :team="$team" />
                                         @endforeach
