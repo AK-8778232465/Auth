@@ -123,6 +123,13 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'laraveldaily/laravel-permission-ui' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'LaravelDaily\\PermissionsUI\\PermissionsUIServiceProvider',
+    ),
+  ),
   'livewire/livewire' => 
   array (
     'providers' => 
@@ -175,6 +182,13 @@
     'aliases' => 
     array (
       'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
+    ),
+  ),
+  'spatie/laravel-permission' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Permission\\PermissionServiceProvider',
     ),
   ),
 );
