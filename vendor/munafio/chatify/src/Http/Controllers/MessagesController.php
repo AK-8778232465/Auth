@@ -224,7 +224,7 @@ class MessagesController extends Controller
         $users = Message::join('users',  function ($join) {
             $join->on('ch_messages.from_id', '=', 'users.id')
                 ->orOn('ch_messages.to_id', '=', 'users.id');
-        })
+        });
 
 
         $usersList = $users->items();
