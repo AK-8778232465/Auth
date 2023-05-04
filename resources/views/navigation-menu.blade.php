@@ -119,6 +119,9 @@
                                 {{ __('Admin Panel') }}
                             </x-dropdown-link>
                             @endrole
+                            <x-dropdown-link href="{{ url('connect') }}">
+                                {{ __('Connect') }}
+                            </x-dropdown-link>
 
                             @role('Super-Admin')
                             <div class="border-t border-gray-200"></div>

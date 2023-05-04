@@ -21,16 +21,17 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'b69d5f1f95cd1ed438c038b6cbcc45b5' => __DIR__ . '/..' . '/filament/notifications/src/Testing/Autoload.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '9261e07cd92c53dcc971c7c88c176c04' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/helpers.php',
         '9720327d09ed9a4ba00c9b5071b71c7d' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/standards.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '2ad94ea6f6f6013119e9abcf4e302a08' => __DIR__ . '/..' . '/filament/forms/src/helpers.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         'eee56a36884c3af04e64bac85043e771' => __DIR__ . '/..' . '/akaunting/laravel-money/src/helpers.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         '2c620c99f96a2b964346b45a4d1d1e64' => __DIR__ . '/..' . '/spatie/invade/src/functions.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
@@ -112,6 +113,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         ),
         'P' => 
         array (
+            'Pusher\\' => 7,
             'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
@@ -209,6 +211,7 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'C' => 
         array (
             'Cron\\' => 5,
+            'Chatify\\' => 8,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -405,6 +408,10 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Ramsey\\Collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
+        'Pusher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
         ),
         'Psy\\' => 
         array (
@@ -666,6 +673,10 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
+        ),
+        'Chatify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/munafio/chatify/src',
         ),
         'Carbon\\' => 
         array (
@@ -942,6 +953,14 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\TranslatorImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorImmutable.php',
         'Carbon\\TranslatorStrongTypeInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorStrongTypeInterface.php',
+        'Chatify\\ChatifyMessenger' => __DIR__ . '/..' . '/munafio/chatify/src/ChatifyMessenger.php',
+        'Chatify\\ChatifyServiceProvider' => __DIR__ . '/..' . '/munafio/chatify/src/ChatifyServiceProvider.php',
+        'Chatify\\Console\\InstallCommand' => __DIR__ . '/..' . '/munafio/chatify/src/Console/InstallCommand.php',
+        'Chatify\\Console\\PublishCommand' => __DIR__ . '/..' . '/munafio/chatify/src/Console/PublishCommand.php',
+        'Chatify\\Facades\\ChatifyMessenger' => __DIR__ . '/..' . '/munafio/chatify/src/Facades/ChatifyMessenger.php',
+        'Chatify\\Http\\Controllers\\Api\\MessagesController' => __DIR__ . '/..' . '/munafio/chatify/src/Http/Controllers/Api/MessagesController.php',
+        'Chatify\\Http\\Controllers\\MessagesController' => __DIR__ . '/..' . '/munafio/chatify/src/Http/Controllers/MessagesController.php',
+        'Chatify\\Traits\\UUID' => __DIR__ . '/..' . '/munafio/chatify/src/Traits/UUID.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
@@ -6498,6 +6517,13 @@ class ComposerStaticInit2501ed877b42d3d882858e78dbae4f4c
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
         'Psy\\VersionUpdater\\SelfUpdate' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/SelfUpdate.php',
+        'Pusher\\ApiErrorException' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/ApiErrorException.php',
+        'Pusher\\Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Pusher.php',
+        'Pusher\\PusherCrypto' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherCrypto.php',
+        'Pusher\\PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherException.php',
+        'Pusher\\PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherInstance.php',
+        'Pusher\\PusherInterface' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherInterface.php',
+        'Pusher\\Webhook' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Webhook.php',
         'Ramsey\\Collection\\AbstractArray' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractArray.php',
         'Ramsey\\Collection\\AbstractCollection' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractCollection.php',
         'Ramsey\\Collection\\AbstractSet' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractSet.php',
