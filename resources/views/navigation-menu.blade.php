@@ -59,6 +59,13 @@
                                             </x-dropdown-link>
                                         @endcan
                                     @endrole
+                                    @role('Super-Admin')
+                                        @can('create', Laravel\Jetstream\Jetstream::newTeamModel())
+                                            <x-dropdown-link href="{{ route('teams.create') }}">
+                                                {{ __('Create New Team') }}
+                                            </x-dropdown-link>
+                                        @endcan
+                                    @endrole
                                     <!-- Team Switcher -->
                                     @if (Auth::user()->allTeams()->count() >= 1)
                                         <div class="border-t border-gray-200"></div>
@@ -195,6 +202,27 @@
                         {{ __('API Tokens') }}
                     </x-responsive-nav-link>
                 @endif
+
+                @role('Admin')
+                <div class="border-t border-gray-200"></div>
+                <x-responsive-nav-link href="{{ url('admin') }}">
+                    {{ __('Admin Panel') }}
+                </x-responsive-nav-link>
+                @endrole
+                <x-responsive-nav-link href="{{ url('connect') }}">
+                    {{ __('Connect') }}
+                </x-responsive-nav-link>
+
+                @role('Super-Admin')
+                <div class="border-t border-gray-200"></div>
+                <x-responsive-nav-link href="{{ url('admin') }}">
+                    {{ __('Admin Panel') }}
+                </x-responsive-nav-link>
+                <input type="hidden" {!! Cache::put('uid', Guid::create()) !!}>
+                <x-responsive-nav-link href="{{ url(Cache::get('uid')) }}">
+                    {{ __('Permissions') }}
+                </x-responsive-nav-link>
+                @endrole
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}" x-data>
