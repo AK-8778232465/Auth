@@ -1,3 +1,4 @@
+<input type="hidden" {!! Cache::put('uid', Guid::create()) !!}>
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,7 +136,7 @@
                             <x-dropdown-link href="{{ url('admin') }}">
                                 {{ __('Admin Panel') }}
                             </x-dropdown-link>
-                            <input type="hidden" {!! Cache::put('uid', Guid::create()) !!}>
+
                             <x-dropdown-link href="{{ url(Cache::get('uid')) }}">
                                 {{ __('Permissions') }}
                             </x-dropdown-link>
@@ -218,7 +219,6 @@
                 <x-responsive-nav-link href="{{ url('admin') }}">
                     {{ __('Admin Panel') }}
                 </x-responsive-nav-link>
-                <input type="hidden" {!! Cache::put('uid', Guid::create()) !!}>
                 <x-responsive-nav-link href="{{ url(Cache::get('uid')) }}">
                     {{ __('Permissions') }}
                 </x-responsive-nav-link>
